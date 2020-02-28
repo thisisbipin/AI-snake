@@ -20,17 +20,17 @@ void gotoxy(int x, int y)
 }
 int main()
 {
-    rand();
+    
     int a=2,b=2,t=120,n,x,y;
-    char jump,c=4,name[10],ch='*'; //c=4 i.e) 4th ASCII character that is a diamond
+    char jump,c='o',name[10],ch='*'; //c=4 i.e) 4th ASCII character that is a diamond
     system("cls");  board();
     int score=-1; //-1 so that initial score = 0
     gotoxy(a,b); 
     cout<<ch; 
     jump=getch(); 
     position: 
-    x=rand(76)+3;
-    y=rand(21)+3; //this determines the position of food to be eaten
+    x=rand()%77+3;
+    y=rand()%22+3; //this determines the position of food to be eaten
     ++score;//for score 
     do { while(!kbhit()) 
             {       system("cls"); 
@@ -63,29 +63,29 @@ end: gotoxy(35,12); cout<<"GAME OVER ,SCORE : " <<score;
 
 void board()
 {
-   cout<<"╓───────────────────────────────────────────────────────────────────────────────╖\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"║                                                                               ║\n";
-   cout<<"╙───────────────────────────────────────────────────────────────────────────────╜\n";
+   cout<<"+-------------------------------------------------------------------------------+\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"|                                                                               |\n";
+   cout<<"+-------------------------------------------------------------------------------+\n";
 }
