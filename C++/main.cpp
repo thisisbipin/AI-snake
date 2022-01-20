@@ -11,7 +11,7 @@ int main()
     ContextSettings settings;
     settings.antialiasingLevel = 8.0;
 
-    RenderWindow window(VideoMode(1200, 1200), "SFML works!", Style::Default, settings);
+    RenderWindow window(VideoMode(1200, 1200), "Snake", Style::Default, settings);
     window.setVerticalSyncEnabled(true); // call it once, after creating the window  -- to control framerate
 
     Font font;

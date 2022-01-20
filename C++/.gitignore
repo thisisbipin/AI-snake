@@ -1,3 +1,5 @@
 .vscode/
 SFML/
 temphelp.txt
+main.o 
+sfml-app
